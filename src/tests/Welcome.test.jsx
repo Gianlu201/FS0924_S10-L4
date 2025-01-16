@@ -7,6 +7,7 @@ describe('mounting phase', () => {
   it('appears in the page', () => {
     render(<Welcome />);
     const h1 = screen.getByText(/benvenuti in epibooks!/i);
+    // console.log(h1);
     expect(h1).toBeInTheDocument();
   });
 });

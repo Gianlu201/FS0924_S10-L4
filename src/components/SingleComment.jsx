@@ -26,7 +26,7 @@ const SingleComment = (props) => {
 
   return (
     <ListGroup.Item className='d-flex justify-content-between'>
-      <p className='text-start m-0'>
+      <p className='text-start m-0' data-testid='singleCommentText'>
         {props.comment.rate} - {props.comment.comment}
       </p>
       <Button
