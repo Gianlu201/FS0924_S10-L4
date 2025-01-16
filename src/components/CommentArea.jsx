@@ -54,7 +54,7 @@ const CommentArea = (props) => {
   }, [props.asin, newUpdate]);
 
   return (
-    <div className='text-center'>
+    <div className='text-center' data-testid='commentAreaId'>
       {isLoading && <Spinner animation='border' variant='success' />}
       {isError && !isLoading && <Error />}
       {props.asin && !isLoading && (
