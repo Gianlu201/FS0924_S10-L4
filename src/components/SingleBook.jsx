@@ -31,6 +31,7 @@ const SingleBook = (props) => {
           handleClick();
         }}
         style={{ border: selected ? '3px solid red' : 'none' }}
+        data-testid='singleBookElement'
       >
         <Card.Img variant='top' src={props.book.img} />
         <Card.Body>
