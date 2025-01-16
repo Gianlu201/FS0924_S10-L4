@@ -11,6 +11,7 @@ const CommentList = (props) => {
               comment={comment}
               key={comment._id}
               setNewUpdate={props.putNewUpdate}
+              data-testid='singleComment'
             />
           ))}
         </ListGroup>
